@@ -109,6 +109,7 @@ class PasswordStrengthBar extends React.Component<
     let newShortScoreWord = password.length < minLength
       ? shortScoreWord
       : scoreWords[score];
+      console.log({newShortScoreWord, score, minLength, shortScoreWord,passwordlength:password.length , scoreWordsSCORE: [score], scoreWords})
     return (
       <div className={className} style={{ ...rootStyle, ...style }}>
         <p>DEV!</p>
